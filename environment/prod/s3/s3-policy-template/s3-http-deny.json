@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Id": "S3PolicyId",
+  "Statement": [
+    {
+      "Sid": "HTTP Deny",
+      "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": "s3:*",
+      "Resource": [
+        "${s3_bucket_arn}/*",
+        "${s3_bucket_arn}"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      }
+    }
+  ]
+}
