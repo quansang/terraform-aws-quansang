@@ -1,0 +1,10 @@
+#All tfvars for variables of PROD env
+project             = "bkqs"
+git_app_folder      = "quansang"
+env                 = "prod"
+full_env            = "production"
+account_id          = "624037363445"
+region              = "ap-northeast-1"
+elb_region_id       = "582318560864"
+inspector_region_id = "406045910587"
+region_us_east_1    = "us-east-1"
