@@ -2,7 +2,8 @@
 # Logs
 ###################
 module "s3_bucket_logs" {
-  source = "git@github.com-bkqs:quansang/terraform-aws-quansang.git//modules/s3?ref=v0.0.1"
+  source  = "quansang/quansang/aws//modules/s3"
+  version = "0.0.1"
   #basic
   env = var.env
 
@@ -25,7 +26,8 @@ module "s3_bucket_logs" {
 # Secrets
 ###################
 module "s3_bucket_secrets" {
-  source = "git@github.com-bkqs:quansang/terraform-aws-quansang.git//modules/s3?ref=v0.0.1"
+  source  = "quansang/quansang/aws//modules/s3"
+  version = "0.0.1"
   #basic
   env = var.env
 
@@ -44,7 +46,8 @@ module "s3_bucket_secrets" {
 # Codedeploy
 ###################
 module "s3_bucket_ec2_codedeploy_app" {
-  source = "git@github.com-bkqs:quansang/terraform-aws-quansang.git//modules/s3?ref=v0.0.1"
+  source  = "quansang/quansang/aws//modules/s3"
+  version = "0.0.1"
   #basic
   env = var.env
 
@@ -63,7 +66,8 @@ module "s3_bucket_ec2_codedeploy_app" {
 # Cloudtrail
 ###################
 module "s3_bucket_cloudtrail" {
-  source = "git@github.com-bkqs:quansang/terraform-aws-quansang.git//modules/s3?ref=v0.0.1"
+  source  = "quansang/quansang/aws//modules/s3"
+  version = "0.0.1"
   #basic
   env = var.env
 
